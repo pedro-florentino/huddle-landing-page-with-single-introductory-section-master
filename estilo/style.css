@@ -18,15 +18,17 @@ body {
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     color: white;
-    height: 100vh;
+    min-height: 100vh;
     background-color: var(--violet);
     background-image: url('../images/bg-mobile.svg');
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
-    padding: 30px 20px;
+    padding: 2rem 1.25rem;
 }
 
 .logo {
@@ -35,27 +37,21 @@ header {
 
 .content {
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 0px 20px 20px;
-    max-width: auto;
-    max-height: auto;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1.25rem;
 }
 
 .img-ilustracao {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: auto;
-    max-height: auto;
-    margin: auto;
 }
 
 .img-ilustracao img {
     max-width: 100%;
-    max-height: auto;
 }
 
 .text-content {
@@ -63,67 +59,64 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    max-width: auto;
-    max-height: auto;
 }
 
 .text-content h1 {
     font-family: "Poppins", sans-serif;
-    font-size: 1.3em;
+    font-size: 1.3rem;
     font-weight: 600;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 1.25rem;
 }
 
 .text-content p {
-    font-size: 1em;
+    font-size: 1rem;
     text-align: center;
-    padding: 20px 0 40px 0;
+    padding: 1.25rem 0 2.5rem;
 }
 
 .register-button {
     background-color: white;
     color: var(--violet);
     border: none;
-    border-radius: 30px;
-    width: 200px;
-    height: auto;
-    padding: 20px;
-    font-size: 1.1em;
-    box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 1.875rem;
+    width: 12.5rem;
+    padding: 1.25rem;
+    font-size: 1.1rem;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
 }
 
 .register-button:hover, .social-icons > a:hover {
     background-color: var(--softMagenta);
     color: white;
-    transition: 0.9s ease-in-out;
+    transition: 0.6s ease-in-out;
 }
 
 footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 30px 0 30px 0;
+    padding: 2.5rem 0;
 }
 
 .social-icons a {
     color: white;
     border: 1px solid white;
-    border-radius: 100%;
-    padding: 10px 15px;
-    margin: 0 5px;
+    border-radius: 50%;
+    padding: 0.625rem 0.9375rem;
+    margin: 0 0.3125rem;
     text-align: center;
 }
 
 @media (min-width: 480px) {
     .text-content h1 {
-        font-size: 1.5em;
+        font-size: 1.5rem;
     }
 }
 
 @media (min-width: 768px) {
     header {
-        padding: 40px 0 40px 40px;
+        padding: 2.5rem;
     }
 
     .logo {
@@ -131,39 +124,39 @@ footer {
     }
 
     .content {
-        padding: 0px 40px 40px;
+        padding: 0 2.5rem;
     }
 
     .text-content h1 {
-        font-size: 2em;
+        font-size: 2rem;
     }
 
     .text-content p {
-        font-size: 1.2em;
+        font-size: 1.2rem;
     }
 
     .register-button {
-        width: 230px;
-        font-size: 1.3em;
+        width: 14.375rem;
+        font-size: 1.3rem;
     }
 
     footer {
-        padding: 40px 0;
+        padding: 2.5rem;
     }
 
     .social-icons a {
-        padding: 20px 25px;
-        margin: 0 5px;
+        padding: 1.25rem 1.5625rem;
+        margin: 0 0.625rem;
     }
 
     .social-icons i {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 }
 
 @media (min-width: 1024px) {
     header {
-        padding: 40px 0 50px 50px;
+        padding: 2.5rem 3.125rem;
     }
 
     .logo {
@@ -171,88 +164,87 @@ footer {
     }
     
     .content {
-        padding: 0px 50px 50px;
+        padding: 0 3.125rem;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .text-content {
+        padding-left: 2.5rem;
     }
 
     .text-content h1 {
-        font-size: 2.3em;
-        padding-top: 40px;
+        font-size: 2.3rem;
+        text-align: left;
+        padding-top: 2.5rem;
     }
 
     .text-content p {
-        font-size: 1.3em;
+        font-size: 1.3rem;
+        text-align: left;
     }
 
     .register-button {
-        width: 250px;
-        font-size: 1.5em;
+        width: 15.625rem;
+        font-size: 1.5rem;
     }
 
     footer {
-        padding: 50px 0;
+        padding: 3.125rem 0;
     }
 
     .social-icons a {
-        padding: 20px 20px;
-        margin: 0 10px;
+        padding: 1.25rem 1.25rem;
     }
 
     .social-icons i {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 }
 
 @media (min-width: 1200px) {
     body {
-        background-color: var(--violet);
         background-image: url('../images/bg-desktop.svg');
     }
     
     .content {
-        padding: 0px 50px 50px;
+        padding: 0 3.125rem;
         flex-wrap: nowrap;
     }
 
     .img-ilustracao {
-        justify-content: flex-start;
-        align-items: flex-start;
         flex: 2 1 auto;
-        max-width: auto;
     }
 
     .text-content {
-        padding-left: 40px;
+        padding-left: 2.5rem;
         flex: 1 2 auto;
-        max-width: 635px;
     }
 
     .text-content h1 {
-        font-size: 1.9em;
-        padding-top: 50px;
-        text-align: justify;
+        font-size: 1.9rem;
     }
 
     .text-content p {
-        font-size: 1.2em;
-        text-align: justify;
+        font-size: 1.2rem;
     }
 
     .register-button {
-        font-size: 1.4em;
+        font-size: 1.4rem;
     }
 
     footer {
         justify-content: flex-end;
         align-items: flex-end;
-        padding: 40px;
+        padding: 2.5rem;
     }
 
     .social-icons a {
-        padding: 20px 20px;
+        padding: 1.25rem 1.25rem;
     }
 
     .social-icons i {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 }
 
@@ -264,31 +256,26 @@ footer {
 
     .img-ilustracao {
         max-width: 900px;
-        flex: 1 1 auto;
     }
 
     .img-ilustracao img {
         width: 100%;
     }
-
-    .text-content {
-        flex: 1 1 auto;
-    }
     
     .text-content h1 {
-        font-size: 2.3em;
+        font-size: 2.3rem;
     }
 
     .text-content p {
-        font-size: 1.3em;
+        font-size: 1.3rem;
     }
 
     footer {
-        padding-bottom: 35px;
+        padding-bottom: 2.1875rem;
     }
 
     .social-icons i {
-        font-size: 25px;
+        font-size: 1.5625rem;
     }
 }
 
@@ -298,25 +285,24 @@ footer {
     }
     
     .text-content h1 {
-        font-size: 2.9em;
-        padding-top: 60px;
+        font-size: 2.9rem;
+        padding-top: 3.75rem;
     }
 
     .text-content p {
-        font-size: 1.5em;
-        padding: 60px 0 80px;
+        font-size: 1.5rem;
+        padding: 3.75rem 0 5rem;
     }
 
     .register-button {
-        font-size: 1.6em;
+        font-size: 1.6rem;
     }
 
     .social-icons a {
-        padding: 25px 25px;
-        margin: 0 10px;
+        padding: 1.5625rem 1.5625rem;
     }
 
     .social-icons i {
-        font-size: 25px;
+        font-size: 1.5625rem;
     }
 }
