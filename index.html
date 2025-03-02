@@ -5,41 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="estilo/style.css">
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
   <title>Frontend Mentor | Huddle landing page with single introductory section</title>
 </head>
 <body>
   <header>
-    <img src="images/logo.svg" alt="Logo Huddle">
+    <img src="images/logo.svg" alt="Logo Huddle" class="logo">
   </header>
-  <main>
-    <section class="content">
-      <img src="images/illustration-mockups.svg" alt="Maquetes de ilustração" class="img-ilustracao">
-      <div class="text-content">
-        <h1>Build The Community Your Fans Will Love</h1>
-        <p>
-          Huddle re-imagines the way we build communities. You have a voice, but so does your audience.
-          Create connections with your users as you engage in genuine discussion.
-        </p>
-        <button class="register-button">Register</button>
-        <ul class="social-icons">
-          <li>
-            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
-          </li>
-          <li>
-            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
-          </li>
-          <li>
-            <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
-          </li>
-        </ul>
-      </div>
-    </section>
-  </main>
+  <section class="content">
+    <div class="img-ilustracao">
+      <img src="images/illustration-mockups.svg" alt="Maquetes de ilustração">
+    </div>
+    <div class="text-content">
+      <h1>Construa a comunidade que seus fãs vão adorar</h1>
+      <p>
+        O Huddle reimagina a maneira como construímos comunidades. Você tem uma voz, mas seu público também.
+        Crie conexões com seus usuários enquanto se envolve em discussões genuínas.
+      </p>
+      <button class="register-button">Registrar</button>
+    </div>
+  </section>
   <footer>
-    <p>
-      Desafio por <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Feito por <a href="https://github.com/pedro-florentino" target="_blank">Pedro Henrique Marques Florentino</a>.
-    </p>
+    <div class="social-icons">
+      <a href="#">
+        <i class='bx bxl-facebook'></i>
+      </a>
+      <a href="#">
+        <i class='bx bxl-twitter'></i>
+      </a>
+      <a href="#">
+        <i class='bx bxl-instagram'></i>
+      </a>
+    </div>
   </footer>
 </body>
 </html>
